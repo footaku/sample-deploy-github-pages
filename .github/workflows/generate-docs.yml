@@ -6,6 +6,9 @@ on:
       - main
     types: [closed]
 
+permissions:
+  pull-requests: write
+
 jobs:
   filter:
     if: github.event.pull_request.merged == true
